@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+<listeners>
+ <listener class-name="com.quovantis.quarc.testbase.Base"/>
+ 	</listeners>
+    <test name="xyz">
+    <classes>
+    <class name="com.quovantis.quarc.testcases.Admin_Section">
+      <methods>
+        <include name="Quarc_Admin_Section" />
+        
+      </methods>
+    </class>
+  </classes>
+  </test>
+</suite>

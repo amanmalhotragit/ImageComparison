@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+<listeners>
+ <listener class-name="test1.test1.Quarc_Chat"/>
+ 	</listeners>
+    <test name="xyz">
+    <classes>
+    <class name="test1.test1.Quarc_Chat">
+      <methods>
+        <include name="ImageComparison" />
+        
+      </methods>
+    </class>
+  </classes>
+
+  </test>
+</suite>
