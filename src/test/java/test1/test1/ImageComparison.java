@@ -33,7 +33,7 @@ public class ImageComparison {
          options.addArguments("--disable-notifications");
          options.addArguments("disable-popup-blocking");
          options.addArguments("--ignore-certificate-errors");
-         
+        
          WebDriver  driver = new ChromeDriver(options);
          //Open the QUARC QA Environment
          driver.get("https://qa.medarchon.com");
@@ -52,7 +52,7 @@ public class ImageComparison {
         // ImageIO.write(screenshot.getImage(), "PNG" , new  File (System.getProperty("user.dir") +"/Images/LogoImage.png"));
          BufferedImage actualImage  = screenshot.getImage();
          BufferedImage expectedImage = ImageIO.read(new File((System.getProperty("user.dir") +"/Images/expected.png")));
-         
+         //Use ImageDiffer Class
          ImageDiffer imgDiff = new ImageDiffer();
          ImageDiff  diff = imgDiff.makeDiff(expectedImage, actualImage);
                   
