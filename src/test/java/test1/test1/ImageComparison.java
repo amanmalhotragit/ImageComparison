@@ -33,8 +33,7 @@ public class ImageComparison {
          options.addArguments("--disable-notifications");
          options.addArguments("disable-popup-blocking");
          options.addArguments("--ignore-certificate-errors");
-        
-         WebDriver  driver = new ChromeDriver(options);
+                 WebDriver  driver = new ChromeDriver(options);
          //Open the QUARC QA Environment
          driver.get("https://qa.medarchon.com");
                   
